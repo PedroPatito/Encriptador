@@ -1,0 +1,157 @@
+
+html{
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size:62.5%;
+    background-color: #e8e8e8;
+    height: 90vh;
+    font-family: 'Raleway', sans-serif;
+
+}
+body{
+    margin: 0%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header{
+    display:flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+    
+}
+header i{
+    margin-left: 4rem;
+    margin-right: 1rem;
+}
+
+header h1{
+    font-size: 5rem;
+    justify-self: center;
+    
+}
+
+.mensaje{
+    background-image: url(./img/investigador.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    width: 30vw;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px #000;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.texto{
+    width: 35vw;
+    height: 70vh;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    background-color: #e8e8e8;
+
+}
+
+button {
+    --bg: #e74c3c;
+    --text-color: #fff;
+    position: relative;
+    width: 15rem;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    /* letter-spacing: 1px; */
+    box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+    margin: 1rem;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  button:active {
+    top: 4px;
+    box-shadow: #c0392b 0px 3px 2px,#000 0px 4px 5px;
+  }
+
+.mensaje-preprocesado{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.mensaje-procesado{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px){
+
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .mensaje-preprocesado{
+        margin-bottom: 1rem;
+    }
+
+    .texto{
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .mensaje{
+        width: 80vw;
+        height: 50vh;
+        
+    }
+    .mensaje-procesado{
+        display: inline-flex;
+    }
+
+    header h1{
+        font-size: 4rem;
+     
+        
+    }
+}
+
+@media screen and (max-width: 375px){
+    header h1{
+        font-size: 3rem;
+    }
+    header i{
+        margin-left: 1rem;
+    }
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+}
